@@ -36,7 +36,7 @@
 
 ### Level 2 PC Can Access Internet
 
-![Level 2 PC Can Access Internet](level2-pc-can-access-interet.png)
+![Level 2 PC Can Access Internet](level2-pc-can-access-internet.png)
 
 ### Level 2 PC Can Access Gitlab
 
