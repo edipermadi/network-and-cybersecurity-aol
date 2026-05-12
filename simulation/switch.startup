@@ -1,0 +1,12 @@
+# Create a bridge interface named 'br0'
+ip link add br0 type bridge
+ip link set br0 up
+
+# Add the physical interfaces to the bridge
+ip link set eth0 master br0
+ip link set eth1 master br0
+
+# Bring the interfaces up (they don't need IP addresses)
+ip link set eth0 up
+ip link set eth1 up
+
