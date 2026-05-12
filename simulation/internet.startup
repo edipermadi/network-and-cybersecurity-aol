@@ -1,10 +1,8 @@
-# Gateway for the "Internet" domain
-ip addr add 1.1.1.1/30 dev eth0
+# ISP Gateway IP
+ip addr add 203.0.113.1/30 dev eth0
 
-# Dummy Public Interface (The "Real" Internet Target)
-ip addr add 8.8.8.8/32 dev lo
+# Simulated Public Target (Cloudflare DNS as example)
+ip addr add 1.1.1.1/32 dev lo
 
-# Since 8.8.8.8 is on a loopback, we just need to ensure 
-# traffic for 1.1.1.2 is sent back to the router
-ip route add 1.1.1.2/32 dev eth0
-
+# Route back to the Edge Router's Public IP
+ip route add 203.0.113.2/32 dev eth0
