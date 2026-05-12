@@ -6,3 +6,5 @@ ip addr add 1.1.1.1/32 dev lo
 
 # Route back to the Edge Router's Public IP
 ip route add 203.0.113.2/32 dev eth0
+
+service apache2 start
