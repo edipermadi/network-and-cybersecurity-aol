@@ -22,13 +22,29 @@
 
 ## Proof of Concept
 
-### Level 1 Can Access Internet
+### Level 1 PC Can Access Internet
 
 ![Level 1 PC Can Access Internet](level1-pc-can-access-internet.png)
 
-### Level 1 Cannot Access Gitlab
+### Level 1 PC Cannot Access Gitlab
 
 ![Level 1 PC Cannot Access Gitlab](level1-pc-cannot-access-gitlab.png)
+
+### Level 2 PC Can Cross Talk
+
+![Level 2 PC Can Cross Talk](level2-pc-can-cross-talk.png)
+
+### Level 2 PC Can Access Internet
+
+![Level 2 PC Can Access Internet](level2-pc-can-access-interet.png)
+
+### Level 2 PC Can Access Gitlab
+
+![Level 2 PC Can Access Gitlab](level2-pc-can-access-gitlab.png)
+
+### Level 2 PC Cannot Access Printer
+
+![Level 2 PC Cannot Access Printer](level2-pc-cannot-access-printer.png)
 
 
 
