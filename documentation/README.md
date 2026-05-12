@@ -46,5 +46,19 @@
 
 ![Level 2 PC Cannot Access Printer](level2-pc-cannot-access-printer.png)
 
+### Level 3 PC Can Cross Talk
+
+![Level 3 PC Can Cross Talk](level3-pc-can-cross-talk.png)
 
 
+### Level 3 PC Can Access Internet
+
+![Level 3 PC Can Access Internet](level3-pc-can-access-internet.png)
+
+### Level 3 PC Can Access Printer
+
+![Level 3 PC Can Access Printer](level3-pc-can-access-printer.png)
+
+### Level 3 PC Cannot Access Gitlab
+
+![Level 3 PC Cannot Access Gitlab](level3-pc-cannot-access-gitlab.png)
