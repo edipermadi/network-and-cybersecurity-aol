@@ -14,3 +14,7 @@ AOL Assignment
 
 ![Topology](topology.jpeg)
 
+## Simulation
+
+Network simulation is performed using [Kathara](https://www.kathara.org/)
+
