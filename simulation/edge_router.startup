@@ -12,12 +12,20 @@ ip route add 192.168.1.0/24 via 172.16.0.2
 ip route add 192.168.2.0/24 via 172.16.0.3
 ip route add 192.168.3.0/24 via 172.16.0.4
 
+#--------------------------
+# Prevent LAN cross talk
+#--------------------------
+
 iptables -A FORWARD -s 192.168.1.0/24 -d 192.168.2.0/24 -j DROP
 iptables -A FORWARD -s 192.168.1.0/24 -d 192.168.3.0/24 -j DROP
 iptables -A FORWARD -s 192.168.2.0/24 -d 192.168.1.0/24 -j DROP
 iptables -A FORWARD -s 192.168.2.0/24 -d 192.168.3.0/24 -j DROP
 iptables -A FORWARD -s 192.168.3.0/24 -d 192.168.1.0/24 -j DROP
 iptables -A FORWARD -s 192.168.3.0/24 -d 192.168.2.0/24 -j DROP
+
+#--------------------------
+# Allow internet access
+#--------------------------
 
 iptables -A FORWARD -i eth0 -o eth1 -j ACCEPT
 
