@@ -1,7 +1,7 @@
 # Internal Interface
 ip addr add 192.168.2.1/24 dev eth0
 # External Interface (Transit to Edge)
-ip addr add 172.16.0.3/28 dev eth1
+ip addr add 172.16.0.3/29 dev eth1
 
 # Enable Routing
 sysctl -w net.ipv4.ip_forward=1
