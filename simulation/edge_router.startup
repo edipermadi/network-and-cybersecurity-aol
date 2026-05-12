@@ -1,13 +1,13 @@
-# Internal Interface (Transit from Local)
-ip addr add 172.16.0.1/30 dev eth0
-# Public External Interface
-ip addr add 203.0.113.2/30 dev eth1
+# Interfaces
+ip addr add 172.16.0.1/29 dev eth0   # Facing Edge Switch
+ip addr add 203.0.113.2/30 dev eth1  # Public IP facing Internet
+ip route add default via 203.0.113.1
 
-# Enable Routing and NAT (Masquerade)
+# Routing & NAT
 sysctl -w net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
 
-# Static Route back to the Local LAN
+# Route back to local network (since no NAT is inside)
 ip route add 192.168.1.0/24 via 172.16.0.2
-# Default route to the ISP/Internet
-ip route add default via 203.0.113.1
+ip route add 192.168.2.0/24 via 172.16.0.3
+ip route add 192.168.3.0/24 via 172.16.0.4
